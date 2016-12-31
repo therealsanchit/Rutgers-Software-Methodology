@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.PropertyValueFactory ?>
+<?import javafx.scene.control.cell.* ?>
+
+
+<AnchorPane maxHeight="1000.0" maxWidth="1000.0" minHeight="1000.0" minWidth="1000.0" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
+   <children>
+      <Label layoutX="503.0" layoutY="14.0" text="Logged in: User" />
+      <Label layoutX="210.0" layoutY="-6.0" text="Albums">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="delete" layoutX="45.0" layoutY="359.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" AnchorPane.rightAnchor="850.0" />
+      <Button fx:id="rename" layoutX="234.0" layoutY="359.0" mnemonicParsing="false" text="Rename" AnchorPane.rightAnchor="650.0" onAction="#renameButton"/>
+      <Button fx:id="open" layoutX="439.0" layoutY="359.0" mnemonicParsing="false" text="Open" AnchorPane.rightAnchor="450.0" onAction="#openAlbum"/>
+      <Button fx:id="create" layoutX="610.0" layoutY="359.0" mnemonicParsing="false" onAction="#createButton" text="Create" AnchorPane.rightAnchor="250.0" />
+      <Button fx:id="search" layoutX="797.0" layoutY="359.0" mnemonicParsing="false" text="Search" AnchorPane.rightAnchor="50.0" onAction="#search" />
+      <Button fx:id="logout" layoutX="897.0" layoutY="475.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.rightAnchor="49.0" />
+      <TableView fx:id="albumtable" layoutX="6.0" layoutY="64.0" prefHeight="271.0" prefWidth="586.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+        	<TableColumn fx:id="namecol" editable="false" prefWidth="170.0" resizable="false" text="Names">
+          		<cellValueFactory>
+      				<PropertyValueFactory property="nameproperty" />
+    			</cellValueFactory>
+    		</TableColumn>
+            <TableColumn fx:id="integercol" editable="false" minWidth="0.0" prefWidth="200.4000244140625" resizable="false" text="#ofPhotos">
+            	<cellValueFactory>
+      				<PropertyValueFactory property="intproperty" />
+    			</cellValueFactory>
+            </TableColumn>
+          	<TableColumn fx:id="oldestcol" editable="false" prefWidth="284.60003662109375" resizable="false" text="Oldest Photo">
+            	<cellValueFactory>
+      				<PropertyValueFactory property="oldproperty" />
+    			</cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="rangecol" editable="false" minWidth="0.0" prefWidth="341.39996337890625" resizable="false" text="Usage">
+       			<cellValueFactory>
+      				<PropertyValueFactory property="newproperty" />
+    			</cellValueFactory>
+       		</TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

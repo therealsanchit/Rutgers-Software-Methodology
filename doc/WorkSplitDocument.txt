@@ -1,0 +1,36 @@
+J : Seong Bin Park (Jason Park)
+S : Sanchit Sharma
+
+Todo List					| Person In Charge
+--------------------------------------------------
+	Window UI
+
+UI Designer					|		S
+
+Login Screen				|	J				
+							|	
+Admin						|	J				
+	Create User				|	J				
+	Delete User				|	J					
+	Users list				|	J				
+							|					
+User						|	J	S				
+	Search Photos			|	J				
+		By Date				|	J
+		By Tags				|	J
+	Delete Album			|	J
+	Create Album			|	J
+	Rename Album			|	J
+			
+	Open Album				|		S
+		Add photo			|		S
+		Remove photo		|		S
+		Caption/Recaption	|		S
+		Display Photo		|		S
+		Tag Window			|		S
+			Add Tag			|		S
+			Delete Tag		|		S
+		Move photo			|		S
+		Slideshow			|		S
+
+Database (storage/recall)	|	J
