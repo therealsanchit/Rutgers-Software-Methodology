@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sanchitsharma.photoalbum.DisplayActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Tag"
+        android:id="@+id/addTag"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove tag"
+        android:id="@+id/removeTag"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/addTag" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/leftPhoto"
+        android:layout_alignTop="@+id/rightPhoto"
+        android:layout_toLeftOf="@+id/rightPhoto"
+        android:layout_toStartOf="@+id/rightPhoto" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right"
+        android:id="@+id/rightPhoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:id="@+id/close"
+        android:layout_alignEnd="@+id/tagView"
+        android:layout_toEndOf="@+id/image_display"
+        android:singleLine="true"
+        android:layout_above="@+id/rightPhoto" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagView"
+        android:layout_toEndOf="@+id/leftPhoto"
+        android:layout_above="@+id/close" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_display"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tagView"
+        android:layout_above="@+id/addTag" />
+
+</RelativeLayout>

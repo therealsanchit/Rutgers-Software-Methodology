@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Photo Album</string>
+
+    <string-array name="album_list">
+        <item>album1</item>
+        <item>album2</item>
+        <item>album3</item>
+    </string-array>
+
+    <string name="photo_list">
+    </string>
+    <string name="User_Info">User_Info</string>
+    <string name="Album_Index">Album_Index</string>
+    <string name="Photo_Index">Photo_Index</string>
+    <string name="Album_Info">Album_Info</string>
+    <string name="saved_file_path">/save</string>
+    <string name="action_settings">Settings</string>
+</resources>
